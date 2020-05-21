@@ -97,7 +97,7 @@ const NavigationHeader = () => {
     const prev = localStorage.getItem("previousPath");
     const previousPathWasHomepage =
       prev === (rootPath || basePath) || (prev && prev.includes("/page/"));
-    const isNotPaginated = !location.pathname.includes("/page/");
+    const isNotPaginated = !window.location.pathname.includes("/page/");
 
     setShowBackArrow(
       previousPathWasHomepage && isNotPaginated && width <= phablet,
