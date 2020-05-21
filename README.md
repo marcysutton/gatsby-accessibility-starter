@@ -1,28 +1,28 @@
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-hero.jpg" alt="gatsby-novela-theme hero image" />
-</a>
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
 
-<br/>
+# Accessible Gatsby Site Example
+## Built with Narative's Novela Theme
 
-# Gatsby Starter Novela
+With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — [Novela](https://github.com/narative/gatsby-starter-novela) makes it easy to start publishing beautiful articles and stories with Gatsby.
 
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
+## Additional features in this repo
 
-Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
+- [Cypress](https://cypress.io/) and [Cypress-axe](https://github.com/avanslaars/cypress-axe) set up for accessibility testing
+- [Chakra-UI](https://chakra-ui.com/) component library
 
-<div>
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg" alt="gatsby-novela-theme live demo" width="295px" />
-</a>
-</div>
+### Accessibility resources
 
-<div>
-<a href="https://www.narative.co/design/open/novela" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg" alt="gatsby-novela-theme figma link" width="295px" />
-</a>
-</div>
+- [Gatsby Accessibility Workshop materials](https://github.com/marcysutton/gatsby-a11y-workshop)
+- [Making Your Gatsby Site Accessible](https://www.gatsbyjs.org/docs/making-your-site-accessible/)
+- [End-to-End Testing in Gatsby](https://www.gatsbyjs.org/docs/end-to-end-testing/)
+- [React Accessibility Docs](https://reactjs.org/docs/accessibility.html)
+- [Additional Accessibility Resources](https://marcysutton.com/web-accessibility-resources/)
 
-# Using Gatsby Starter Novela
+## Using this starter
 
 This guide will take you through setting up Novela with Gatsby Starter Novela.
 
@@ -63,9 +63,23 @@ http://localhost:8000/admin to view the editor.
 yarn proxy
 ```
 
-### Help
+### Step 3: Run tests
+
+Run end-to-end accessibility tests with Cypress.
+
+```sh
+yarn run test:e2e
+```
+
+Tests can also be run in a continuous integration environment without the Cypress UI:
+
+```sh
+yarn run test:e2e:ci
+```
+
+### Novela help
 
 If you don't have *yarn* installed follow the [yarn getting started guide](https://classic.yarnpkg.com/en/docs/getting-started) 
 
-For more information visit the [Theme repository](https://github.com/narative/gatsby-theme-novela)
+For more information visit the original [Theme repository](https://github.com/narative/gatsby-theme-novela)
 
