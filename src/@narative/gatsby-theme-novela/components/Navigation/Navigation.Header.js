@@ -14,6 +14,17 @@ import {
   getBreakpointFromTheme,
 } from "@utils";
 
+import {
+  Menu,
+  MenuList,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+  MenuPopover,
+  MenuLink,
+} from "@reach/menu-button";
+import "@reach/menu-button/styles.css";
+
 const siteQuery = graphql`
   {
     sitePlugin(name: { eq: "@narative/gatsby-theme-novela" }) {
@@ -81,6 +92,27 @@ const SharePageButton = () => {
   );
 };
 
+const CustomReachMenu = () => {
+  const [colorMode] = useColorMode();
+  const isDark = colorMode === `dark`;
+  const color = isDark ? "#fff" : "#000";
+
+  return (
+    <ReachWrapper
+      data-a11y="false"
+      data-test-id="menu"
+    >
+      <Menu>
+        <MenuButton style={{color: color}}>Menu</MenuButton>
+        <MenuList>
+          <MenuItem onSelect={() => alert("Download")}>Download</MenuItem>
+          <MenuLink to="view">View</MenuLink>
+        </MenuList>
+      </Menu>
+    </ReachWrapper>
+  );
+}
+
 const NavigationHeader = () => {
   const [showBackArrow, setShowBackArrow] = useState(false);
   const [previousPath, setPreviousPath] = useState("/");
@@ -136,8 +168,7 @@ const NavigationHeader = () => {
             <>
               <SharePageButton />
               <DarkModeToggle />
-              {/* Nothing happening here */}
-              HIIIII
+              <CustomReachMenu />
             </>
           )}
         </NavControls>
@@ -257,7 +288,7 @@ const IconWrapper = styled.button`
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s ease;
-  margin-left: 30px;
+  margin: 0 15px;
 
   &:hover {
     opacity: 1;
@@ -286,6 +317,30 @@ const IconWrapper = styled.button`
     }
   `}
 `;
+
+const ReachWrapper = styled.div`
+  position: relative;
+  border-radius: 5px;
+  width: 40px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  margin: 0 15px;
+
+  &[data-a11y="true"] button:focus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -30%;
+    width: 100%;
+    height: 160%;
+    border: 2px solid ${p => p.theme.colors.accent};
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 5px;
+  }
+`
 
 // This is based off a codepen! Much appreciated to: https://codepen.io/aaroniker/pen/KGpXZo
 const MoonOrSun = styled.div`

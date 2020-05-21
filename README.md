@@ -11,7 +11,7 @@ With minimal styling and maximum features — including multiple homepage layout
 ## Additional features in this repo
 
 - [Cypress](https://cypress.io/) and [Cypress-axe](https://github.com/avanslaars/cypress-axe) set up for accessibility testing
-- [Chakra-UI](https://chakra-ui.com/) component library
+- [Reach UI](https://reacttraining.com/reach-ui/) menu button
 
 ### Accessibility resources
 
