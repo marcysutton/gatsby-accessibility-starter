@@ -2,11 +2,11 @@
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
-  <h1>Accessible Gatsby Site Example</h1>
+  <h1>Gatsby Site Accessibility Example</h1>
   <h2>Built with Narative's Novela Theme</h2>
 </div>
 
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — [Novela](https://github.com/narative/gatsby-starter-novela) makes it easy to start publishing beautiful articles and stories with Gatsby.
+With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — [Novela](https://github.com/narative/gatsby-starter-novela) makes it easy to start publishing beautiful articles and stories with Gatsby. This fork is intended to be a sandbox for accessibility development and testing.
 
 ## Additional features in this repo
 
