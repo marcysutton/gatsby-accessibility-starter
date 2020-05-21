@@ -1,11 +1,10 @@
-<p align="center">
+<div align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
-</p>
-
-# Accessible Gatsby Site Example
-## Built with Narative's Novela Theme
+  <h1>Accessible Gatsby Site Example</h1>
+  <h2>Built with Narative's Novela Theme</h2>
+</div>
 
 With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — [Novela](https://github.com/narative/gatsby-starter-novela) makes it easy to start publishing beautiful articles and stories with Gatsby.
 
