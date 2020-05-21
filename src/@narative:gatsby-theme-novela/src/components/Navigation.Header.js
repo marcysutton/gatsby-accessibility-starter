@@ -14,16 +14,6 @@ import {
   getBreakpointFromTheme,
 } from "@utils";
 
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-} from "@chakra-ui/core";
-
 const siteQuery = graphql`
   {
     sitePlugin(name: { eq: "@narative/gatsby-theme-novela" }) {
@@ -34,8 +24,6 @@ const siteQuery = graphql`
     }
   }
 `;
-
-const { isOpen, onOpen, onClose } = useDisclosure();
 
 const DarkModeToggle = () => {
   const [colorMode, setColorMode] = useColorMode();
@@ -148,28 +136,12 @@ const NavigationHeader = () => {
             <>
               <SharePageButton />
               <DarkModeToggle />
-              <Button onClick={onOpen}>Open Modal</Button>
+              {/* Nothing happening here */}
+              HIIIII
             </>
           )}
         </NavControls>
       </NavContainer>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Lorem count={2} />
-          </ModalBody>
-
-          <ModalFooter>
-            <Button variantColor="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-            <Button variant="ghost">Secondary Action</Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
     </Section>
   );
 };
