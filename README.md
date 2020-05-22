@@ -23,22 +23,22 @@ With minimal styling and maximum features — including multiple homepage layout
 
 ## Using this starter
 
-This guide will take you through setting up Novela with Gatsby Starter Novela.
+This guide will take you through setting up the site with this fork of Gatsby Starter Novela.
 
 ### Step 1: Starter installation
 
 ##### With `gatsby-cli`:
 
 ```sh
-gatsby new novela-site https://github.com/narative/gatsby-starter-novela
+gatsby new gatsby-site https://github.com/marcysutton/gatsby-accessibility-starter
 ```
 
 ##### With `git clone`:
 
 ```sh
-git clone git@github.com:narative/gatsby-starter-novela.git novela-site
+git clone git@github.com:marcysutton/gatsby-accessibility-starter.git gatsby-site
 
-cd novela-site
+cd gatsby-site
 
 yarn
 ```
